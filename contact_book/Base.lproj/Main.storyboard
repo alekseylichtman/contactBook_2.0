@@ -39,14 +39,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cQY-BR-gUC">
-                                            <rect key="frame" x="16" y="12" width="19" height="50"/>
+                                            <rect key="frame" x="16" y="12" width="50" height="50"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="3HN-EK-9j3"/>
-                                                <constraint firstAttribute="width" constant="50" id="SNC-as-0mj"/>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Weu-TN-Fa4"/>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="eSD-eN-cR0"/>
+                                                <constraint firstAttribute="width" constant="50" id="2wG-IG-Vb4"/>
                                                 <constraint firstAttribute="height" constant="50" id="m6i-ML-qrd"/>
-                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="yW7-4s-8m3"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1W-Kh-rfP">
@@ -69,15 +65,15 @@
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="EnS-02-23f" secondAttribute="trailing" constant="10" id="0Cd-Qg-cJT"/>
                                         <constraint firstItem="5J2-cW-G7i" firstAttribute="leading" secondItem="81f-wm-88N" secondAttribute="leadingMargin" constant="58" id="3Ik-IS-vQz"/>
                                         <constraint firstItem="EnS-02-23f" firstAttribute="leading" secondItem="5J2-cW-G7i" secondAttribute="trailing" constant="8" id="GAZ-4w-lEE"/>
                                         <constraint firstItem="C1W-Kh-rfP" firstAttribute="top" secondItem="81f-wm-88N" secondAttribute="topMargin" constant="1" id="Kw4-tk-Xpu"/>
+                                        <constraint firstItem="C1W-Kh-rfP" firstAttribute="leading" secondItem="cQY-BR-gUC" secondAttribute="trailing" constant="8" id="VGV-EX-9Ub"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="5J2-cW-G7i" secondAttribute="bottom" constant="2" id="WMj-Ii-2nf"/>
                                         <constraint firstItem="cQY-BR-gUC" firstAttribute="top" secondItem="81f-wm-88N" secondAttribute="topMargin" constant="1" id="X1w-NV-dDz"/>
                                         <constraint firstItem="cQY-BR-gUC" firstAttribute="leading" secondItem="81f-wm-88N" secondAttribute="leadingMargin" id="YV5-jc-DQB"/>
-                                        <constraint firstItem="C1W-Kh-rfP" firstAttribute="leading" secondItem="81f-wm-88N" secondAttribute="leadingMargin" constant="58" id="f6x-L3-gHO"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="cQY-BR-gUC" secondAttribute="trailing" constant="324" id="lc7-Oz-QR3"/>
-                                        <constraint firstItem="5J2-cW-G7i" firstAttribute="top" secondItem="C1W-Kh-rfP" secondAttribute="bottom" constant="17" id="od5-uE-Dbe"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="C1W-Kh-rfP" secondAttribute="trailing" constant="10" id="mFc-di-AO4"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="EnS-02-23f" secondAttribute="bottom" constant="2" id="pnB-wt-HNZ"/>
                                         <constraint firstItem="5J2-cW-G7i" firstAttribute="top" secondItem="C1W-Kh-rfP" secondAttribute="bottom" constant="17" id="qxd-9h-rkn"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="cQY-BR-gUC" secondAttribute="bottom" constant="2" id="vUC-S2-fCW"/>

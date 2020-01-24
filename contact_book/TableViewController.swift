@@ -27,26 +27,20 @@ class TableViewController: UITableViewController {
             contacts = try! JSONDecoder().decode([Contact].self, from: data!)
             
             for contact in contacts {
-                dict["\(contact.first_name?.first ?? contact.last_name?.first ?? contact.email?.first)"] = []
+                dict["\(contact.groupName)"] = []
             }
             
             for contact in contacts {
-                dict["\(contact.first_name?.first ?? contact.last_name?.first ?? contact.email?.first)"]?.append(contact)
+                dict["\(contact.groupName)"]?.append(contact)
             }
             
             
         tableView.reloadData()
+        print(dict)
         
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
+
     override func numberOfSections(in tableView: UITableView) -> Int {
         return dict.keys.count
     }

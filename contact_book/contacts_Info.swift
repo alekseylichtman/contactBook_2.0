@@ -16,10 +16,20 @@ struct Contact: Codable {
     var avatar: String?
     var occupation: String?
     var phone_number: String?
+    
+    var groupName: String {
+        if let key = first_name ?? last_name ?? email,
+            let firstLetter = key.first {
+            
+            return "\(firstLetter)"
+        }
+        return ""
+    }
 }
 
 
 let contactsJson = """
+
 [
 
 {"id":1,"first_name":"Marion","last_name":"Freckleton","email":"mfreckleton0@meetup.com","avatar":"https://robohash.org/etpossimusatque.bmp?size=50x50&set=set1","occupation ":"Fivespan","phone_number":"(618) 8918261"},
